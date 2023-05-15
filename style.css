@@ -2,23 +2,34 @@
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: auto;
     margin: 0;
-    overflow: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0, 0.7);
 }
   h1 {
-    color: #333;
+    color: #171010;
     text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
+    background-color: #c1bebe;
+    width: 200px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 41%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
-  .student {
+  .card-group{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
     background-color: #974343;
     border: 1px solid #ccc;
     padding: 10px;
@@ -26,25 +37,45 @@
     border-radius: 5px;
     box-shadow: 2px 2px 2px #ccc;
   }
-  .card-group{
-    display: flex;
-    flex-direction: column;
-  }
+
 .card{
     align-items: center;
     justify-content: center;
     background-color: #c1bebe;
     height: 40vh;
-    width: 100vh;
+    width: 60vh;
     padding: 20px;
+    border: 1px solid #ccc;
+    
+		margin: 10px;
+		display: flex;
+    flex-direction: column;
   }
-img{
-    height: 80px;
+.dp{
+    height: 74px;
     width: 60px;
     border-radius: 50%;
     cursor: pointer;
 }
-img:target{
-    height: 80vh;
-    border-radius: 50%;
+.info ,.rn{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #333;
+  justify-content: space-between;
+  margin-right:20px;
+  padding: 7px;
 }
+.dp {
+  margin-right: 10px;
+  max-height: 100px;
+  max-width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+ img:hover{
+  scale: 2.5;
+  transition-delay:0.5s;
+ }
