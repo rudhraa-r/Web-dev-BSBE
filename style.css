@@ -1,0 +1,50 @@
+.container{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    overflow: 0;
+}
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .student {
+    background-color: #974343;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+  }
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+.card{
+    align-items: center;
+    justify-content: center;
+    background-color: #c1bebe;
+    height: 40vh;
+    width: 100vh;
+    padding: 20px;
+  }
+img{
+    height: 80px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+img:target{
+    height: 80vh;
+    border-radius: 50%;
+}
